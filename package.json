@@ -1,0 +1,22 @@
+{
+  "name": "login-node",
+  "version": "1.0.0",
+  "description": "Sistema de login simples com Node e Express",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.13",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stênio",
+  "license": "ISC"
+}

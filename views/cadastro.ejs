@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Login com NodeJS</title>
+</head>
+<body>
+<div id="corpo-formu">
+    <form method="POST" action="/salvarcadastro">
+      <h1><i class="fab fa-php"></i></h1><br>
+      <input type="text" name="nome" placeholder="Nome" autocomplete="off" id=""><br><br>
+
+      <input type="email" name="email" placeholder="Email" autocomplete="off" id="email" onclick="erro()"><br><br>
+  
+      <input type="password" name="senha" placeholder="Senha" id="senha"><br><br>
+
+      <input type="password" name="confisenha" placeholder="Confirmar Senha" id="confisenha"><br><br>
+  
+      <button class="btn">Cadastrar</button><br>
+
+      <a href="/">voltar</a><br>
+
+      <!-- <span class="erro"><i class="fa fa-exclamation-triangle"></i> Cadastro Incompleto</span> -->
+
+      
+      
+    </form>
+  </div>
+  
+</body>
+</html>
