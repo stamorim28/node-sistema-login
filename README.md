@@ -12,4 +12,6 @@ Seu trabalho é registrar os dados de nome, email e senha feito em cadastro no b
 
 Depois é só tentar logar novamente no início com os dados que foram passados e entrar na página de agradecimento.
 
-As cores usadas na tela do sistema são inspiradas no próprio Node:  #68A063, #3C873A, #303030.
+Lembre-se de ver a demonstração do sistema no link acima.
+
+As cores usadas no design do sistema são inspiradas no próprio Node:  #68A063, #3C873A, #303030.
