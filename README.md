@@ -12,4 +12,4 @@ Depois é só tentar logar novamente no início com os dados que foram passados 
 
 Lembre-se de ver a demonstração do sistema no link acima.
 
-A tela de login é responsiva támbem e as cores usadas no design do sistema são inspiradas no próprio Node:  #68A063, #3C873A, #303030.
+A tela de login é responsiva também e as cores usadas no design do sistema são inspiradas no próprio Node:  #68A063, #3C873A, #303030.
