@@ -4,7 +4,7 @@ Demonstração - https://exhruu58rs1sgr7npdb7tg-on.drv.tw/TESTES%20DE%20SITES/de
 
 ![print](https://github.com/stamorim28/sistema-login-node/blob/master/login.png)
 
-Seu trabalho é registrar os dados de nome, email e senha feito em cadastro no banco de dados no qual eu usei o MySQL, também existe uma confirmação de senha em que caso as senhas não batam a página será recarregada e o usuário terá que se registrar novamente, se cadastro for efetuado com sucesso o usuário receberará um email informando sobre tal, onde trabalhei com o Nodemailer.
+Seu trabalho é registrar os dados de nome, email e senha feito em cadastro no banco de dados no qual eu usei o MySQL, também existe uma confirmação de senha em que caso as senhas não batam a página será recarregada e o usuário terá que se registrar novamente, se cadastro for efetuado com sucesso o usuário receberará um email informando sobre tal, onde trabalhei com o Nodemailer(exemplo na demonstração).
 
 ![print](https://github.com/stamorim28/sistema-login-node/blob/master/cadastro.png)
 
