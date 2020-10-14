@@ -8,7 +8,7 @@ Seu trabalho é registrar os dados de nome, email e senha feito em cadastro no b
 
 ![print](https://github.com/stamorim28/sistema-login-node/blob/master/cadastro.png)
 
-Depois é só tentar logar novamente no início com os dados que foram passados e entrar na página de agradecimento.
+Depois é só tentar logar novamente no início com os dados que foram passados e entrar na página de agradecimento já logado.
 
 Lembre-se de ver a demonstração do sistema no link acima.
 
