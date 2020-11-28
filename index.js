@@ -7,7 +7,7 @@ const transporter = require("./database/nodemailer");
 const md5 = require('md5');
 
 //BANCO DE DADOS ---------------------------------------------------------------
-connection.authenticate().then(() => {console.log("Conexão feita com o banco de dados")})
+connection.authenticate().then(() => {console.log("Conexão feita com o banco de dados!")})
 .catch((erro) => {
   console.log(erro)
 });
@@ -22,7 +22,11 @@ app.use(bodyParser.json());
 
 //ROTAS ------------------------------------------------------------------------
 app.get("/", (req, res) => {
-  res.render("index");
+  Cadastro.findAll()
+  .then((cadastro) => {
+    res.render("index", {cadastro: cadastro});
+  })
+
 })
 
 app.post("/login", (req, res) => {
@@ -35,7 +39,7 @@ app.post("/login", (req, res) => {
     if(cadastro != undefined){
       res.render("obrigado")
     } else if (email == '' || senha == '' || cadastro == undefined) {
-      res.redirect("/")
+      res.redirect("/", {cadastro: cadastro})
     }
   })
     
@@ -63,8 +67,10 @@ app.post("/salvarcadastro",(req, res) => {
           email: email,
           senha: senha
         }
+      }).then(() => {
+        res.redirect("/cadastrar")
       })
-      res.redirect("/cadastrar")
+      
        
     } else {
       res.redirect("/")
@@ -72,9 +78,17 @@ app.post("/salvarcadastro",(req, res) => {
         from: "Stênio Amorim <testamais.01@gmail.com>",
         to: email,
         subject: "Obrigado por testar minha aplicação!",
-        html: `Olá ${nome}, se este email chegou até você então seu cadastro na aplicação foi feito com sucesso. &#128236; &#9989;<br><br>
-        Para informações de <strong><a href='https://linktr.ee/stamorim28'>contato</a></strong> é só clicar, valeu. &#128513;<br><br>
-        &#9940; email de teste, favor não responder. &#9940;`,
+        html: `
+          <html>
+          <body>
+            <p>Olá <strong>${nome}</strong>, se este email chegou até você então seu cadastro na aplicação foi feito com sucesso. &#128236; &#9989;</p>
+            <p>Para informações de <strong><a href='https://linktr.ee/stamorim28'>contato</a></strong> é só clicar, valeu. &#128513;</p><br><br>
+            
+            <p>&#9940; <strong>Email de contato: jstenio.rocha@gmail.com</strong> &#9940;</p
+            
+          </body>
+          </html>
+        `
       }).then((msg) => {
         console.log(msg);
       }).catch((erro) => {
